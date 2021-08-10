@@ -11,10 +11,10 @@ font-family: 'Voltaire', sans-serif; */
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
   outline: none;
-
   border: none;
   text-decoration: none !important;
   transition: all .2s linear;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -23,7 +23,7 @@ font-family: 'Voltaire', sans-serif; */
   --black: #1a202c;
   --red: #c53030;
   --primary-light: #fff2f1;
-  --seperator: #e6e8eb;
+  --separator: #e6e8eb;
 }
 
 *::selection {
@@ -40,112 +40,3 @@ html {
 }
 
 
-/*---------------------------- 
-nav section start
------------------------------ */
-header {
-  padding:3rem 9%;
-  background-image: url('./images/hero-bg.png');
-  min-height: 100vh;
-  background-position: right;
-  background-repeat: no-repeat;
-
-}
-
-header .nav-section {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .nav{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-header .nav > a{
-  font-size: 1.7rem;
-  color: #212832;
-  padding: 0 2.5rem;
-}
-
-.sign-up {
-  border: .2rem solid #212832;
-  padding: .9rem 2.2rem;
-}
-
-.dropdown-btn {
-  background: none;
-  font-size: 1.8rem;
-  color: #212832;
-  padding-left: 2.5rem;
-}
-
-button#\#drop-btn {
-  padding: 0;
-}
-
-.dropdown-menu {
-  position: absolute;
-  padding: 2rem 0rem;
-  border-radius: 1rem;
-  background-color: white;
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-}
-.dropdown-menu > a{
-  font-size: 1.7rem;
-  color: #212832;
-  display: block;
-  float: right;
-  padding: 1.5rem 2rem;
-}
-.active {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-svg{
-  height: 5rem;
-  width: 5rem;
-  border: .2rem solid #212832;
-  border-radius: .2rem;
-  display: none;
-}
-
-
-
-/* responsive */
-@media(max-width: 1200px){
-  header{
-    padding: 1rem;
-  }
-  header .nav-section .nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-  }
- header .nav{
-   padding-top: 2rem;
-   align-items: flex-start;
-   flex-direction: column;
-   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
- }
-header nav.actives {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-
- header .nav > a{
-  font-size: 1.7rem;
-  color: #212832;
-  padding: .5rem 2.5rem;
-}
- .dropdown-menu {
-  display: flex;
-  flex-direction: column;
-}
-svg{
-  display: block;
-}
-
-}
