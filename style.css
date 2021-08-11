@@ -71,7 +71,7 @@ header svg {
 header .header-nav .nav a {
     color: #212832;
     font-size: 1.7rem;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
 }
 
 
@@ -81,21 +81,121 @@ header .header-nav .nav a:hover {
 
 header .header-nav .nav .btn-active {
     color: var(--violet);
+    border-bottom: 3px solid var(--violet);
 }
 
+/* --------------------------
+hero section start
+---------------------------- */
+
+.hero-warper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.hero-warper .hero-content p {
+    color: #DF6951;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hero-warper .hero-content h1 {
+    color: #181E4B;
+    font-size: 7.4rem;
+    font-family: 'Voltaire', sans-serif;
+    font-weight: 700;
+    padding: 2.4rem 0;
+    margin: 0;
+}
+
+.hero-warper .hero-content h6 {
+    color: #5E6282;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+
+.hero-warper .hero-content .hero-content-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-warper .hero-content .find-btn {
+    background-color: #F1A501;
+    padding: 2rem 3rem;
+    color: white;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+}
+
+.hero-warper .hero-content .play-btn {
+    display: flex;
+    align-items: center;
+}
+
+.hero-warper .hero-content .play-btn-icon {
+    background-color: #DF6951;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.hero-warper .hero-content .play-now-btn {
+    font-size: 1.7rem;
+    color: #686D77;
+    font-weight: 500;
+    background: none;
+}
+
+.hero-warper .hero-img img {
+    width: 90%;
+    float: right;
+}
+
+
+
+
+
+
+
+
+/* --------------------------
+@ media quarry responsive
+---------------------------- */
+
+
 @media(max-width:992px) {
-    html{
+    html {
         font-size: 58%;
     }
+
     header {
         padding: 3rem 2%;
     }
+
+    .hero-warper .hero-content h1 {
+        font-size: 5.4rem;
+    }
+    .hero-warper .hero-content h1 {
+        padding: .5rem 0;
+    }
 }
 
+
+
+
 @media (max-width:768px) {
-    html{
+    header {
+        padding: 3rem 2%;
+    }
+    html {
         font-size: 55%;
     }
+
     header .nav {
         position: absolute;
         top: 100%;
@@ -119,5 +219,15 @@ header .header-nav .nav .btn-active {
 
     header svg {
         display: block;
+    }
+
+    .hero-warper .hero-img img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
+    }
+    .hero-warper {
+        flex-wrap: wrap;
     }
 }
